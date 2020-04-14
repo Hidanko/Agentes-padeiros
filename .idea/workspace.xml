@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05b75b43-8bb3-4179-a1e8-4e4c74dc7f32" name="Default Changelist" comment="Logs" />
+    <list default="true" id="05b75b43-8bb3-4179-a1e8-4e4c74dc7f32" name="Default Changelist" comment="Logs">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/agentes/Atendente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelos/Pao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APDescription.txt" beforeDir="false" afterPath="$PROJECT_DIR$/APDescription.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MTPs-Main-Container.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MTPs-Main-Container.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agentes/Padeiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agentes/Padeiro.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,6 +110,7 @@
       <workItem from="1571831881773" duration="4922000" />
       <workItem from="1571918079402" duration="16370000" />
       <workItem from="1586892410028" duration="109000" />
+      <workItem from="1586892846605" duration="2724000" />
     </task>
     <task id="LOCAL-00001" summary="implementação das tarefas de cada agente">
       <created>1571623809922</created>
@@ -182,6 +191,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Correção log do Gerente" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="525" y="103" key="#com.intellij.ide.util.MemberChooser" timestamp="1586893941739">
+      <screen x="0" y="0" width="1440" height="839" />
+    </state>
+    <state x="525" y="103" key="#com.intellij.ide.util.MemberChooser/0.0.1440.839/-1280.0.1280.994@0.0.1440.839" timestamp="1586893941739" />
     <state x="221" y="64" key="SettingsEditor" timestamp="1586892513113">
       <screen x="0" y="0" width="1440" height="839" />
     </state>
