@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aplicação:
 
 >DELAY regulável em Main.delay (Atual 5000 milissegundos)
@@ -63,3 +64,7 @@ Inicialmente 2 no sistema, podendo ser adicionados mais durante a execução
 
 1. Tick de 1 delay -> Busca por novas tarefas vindas dos PROGRAMADORES
 2. Tick de 1 delay -> "Gasta" uma hora validando a tarefa atual, verifica se foi finalizado, 
+=======
+# Agentes-padeiros
+Projeto para a disciplina Inteligencia Artificial 2
+>>>>>>> 215a9946452636237aff6a97e9aed334d8663831
