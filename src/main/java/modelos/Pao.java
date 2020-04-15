@@ -5,21 +5,22 @@ import agentes.Atendente;
 import java.io.Serializable;
 
 public class Pao implements Serializable {
-    private String nome;
+    private Enum nome;
     private int tempo;
+    private int quantidade;
     private Atendente atendente;
 
-    public Pao(String nome, int tempo, Atendente atendente) {
+
+    public Pao(Enum nome, int quantidade) {
         this.nome = nome;
-        this.tempo = tempo;
-        this.atendente = atendente;
+        this.quantidade = quantidade;
     }
 
-    public String getNome() {
+    public Enum getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public void setNome(Enum nome) {
         this.nome = nome;
     }
 
@@ -41,5 +42,12 @@ public class Pao implements Serializable {
 
     public void diminuirTempo(int quantidade){
         this.tempo = this.tempo - quantidade;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 }

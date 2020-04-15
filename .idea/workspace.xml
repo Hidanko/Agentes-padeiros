@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05b75b43-8bb3-4179-a1e8-4e4c74dc7f32" name="Default Changelist" comment="Logs">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/agentes/Atendente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelos/Pao.java" afterDir="false" />
+    <list default="true" id="05b75b43-8bb3-4179-a1e8-4e4c74dc7f32" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/agentes/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelos/Estoque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelos/PaoTipo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelos/Pedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APDescription.txt" beforeDir="false" afterPath="$PROJECT_DIR$/APDescription.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MTPs-Main-Container.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MTPs-Main-Container.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agentes/Padeiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agentes/Padeiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agentes/Atendente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agentes/Atendente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agentes/Gerente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agentes/Programador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agentes/Testador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/ListaFuncionarios.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/Nivel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/Pao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelos/Pao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/Tarefa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/TarefaStatus.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -110,7 +119,8 @@
       <workItem from="1571831881773" duration="4922000" />
       <workItem from="1571918079402" duration="16370000" />
       <workItem from="1586892410028" duration="109000" />
-      <workItem from="1586892846605" duration="2724000" />
+      <workItem from="1586892846605" duration="3125000" />
+      <workItem from="1586909688671" duration="3988000" />
     </task>
     <task id="LOCAL-00001" summary="implementação das tarefas de cada agente">
       <created>1571623809922</created>
@@ -161,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571937205669</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Padeiro ok">
+      <created>1586899216813</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586899216813</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,27 +205,49 @@
     <MESSAGE value="sintaxe README" />
     <MESSAGE value="teste README" />
     <MESSAGE value="Correção log do Gerente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correção log do Gerente" />
+    <MESSAGE value="Padeiro ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Padeiro ok" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="525" y="103" key="#com.intellij.ide.util.MemberChooser" timestamp="1586893941739">
+    <state x="450" y="174" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1586909952584">
       <screen x="0" y="0" width="1440" height="839" />
     </state>
-    <state x="525" y="103" key="#com.intellij.ide.util.MemberChooser/0.0.1440.839/-1280.0.1280.994@0.0.1440.839" timestamp="1586893941739" />
+    <state x="450" y="174" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1440.839/-1280.0.1280.994@0.0.1440.839" timestamp="1586909952584" />
+    <state x="525" y="103" key="#com.intellij.ide.util.MemberChooser" timestamp="1586912929225">
+      <screen x="0" y="0" width="1440" height="839" />
+    </state>
+    <state x="525" y="103" key="#com.intellij.ide.util.MemberChooser/0.0.1440.839/-1280.0.1280.994@0.0.1440.839" timestamp="1586912929225" />
+    <state x="450" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586913662237">
+      <screen x="0" y="0" width="1440" height="839" />
+    </state>
+    <state x="450" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.839/-1280.0.1280.994@0.0.1440.839" timestamp="1586913662237" />
+    <state x="344" y="0" key="CommitChangelistDialog2" timestamp="1586899216315">
+      <screen x="0" y="0" width="1440" height="839" />
+    </state>
+    <state x="344" y="0" key="CommitChangelistDialog2/0.0.1440.839/-1280.0.1280.994@0.0.1440.839" timestamp="1586899216315" />
+    <state width="1397" height="200" key="GridCell.Tab.0.bottom" timestamp="1586899600112">
+      <screen x="0" y="0" width="1440" height="839" />
+    </state>
+    <state width="1397" height="200" key="GridCell.Tab.0.bottom/0.0.1440.839/-1280.0.1280.994@0.0.1440.839" timestamp="1586899600112" />
+    <state width="1397" height="200" key="GridCell.Tab.0.center" timestamp="1586899600112">
+      <screen x="0" y="0" width="1440" height="839" />
+    </state>
+    <state width="1397" height="200" key="GridCell.Tab.0.center/0.0.1440.839/-1280.0.1280.994@0.0.1440.839" timestamp="1586899600112" />
+    <state width="1397" height="200" key="GridCell.Tab.0.left" timestamp="1586899600112">
+      <screen x="0" y="0" width="1440" height="839" />
+    </state>
+    <state width="1397" height="200" key="GridCell.Tab.0.left/0.0.1440.839/-1280.0.1280.994@0.0.1440.839" timestamp="1586899600112" />
+    <state width="1397" height="200" key="GridCell.Tab.0.right" timestamp="1586899600112">
+      <screen x="0" y="0" width="1440" height="839" />
+    </state>
+    <state width="1397" height="200" key="GridCell.Tab.0.right/0.0.1440.839/-1280.0.1280.994@0.0.1440.839" timestamp="1586899600112" />
     <state x="221" y="64" key="SettingsEditor" timestamp="1586892513113">
       <screen x="0" y="0" width="1440" height="839" />
     </state>
     <state x="221" y="64" key="SettingsEditor/0.0.1440.839/-1280.0.1280.994@0.0.1440.839" timestamp="1586892513113" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/agentes/Testador.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="312" y="152" key="Vcs.Push.Dialog.v2" timestamp="1586899218413">
+      <screen x="0" y="0" width="1440" height="839" />
+    </state>
+    <state x="312" y="152" key="Vcs.Push.Dialog.v2/0.0.1440.839/-1280.0.1280.994@0.0.1440.839" timestamp="1586899218413" />
   </component>
 </project>
