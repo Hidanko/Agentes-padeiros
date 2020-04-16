@@ -30,6 +30,8 @@ public class Padeiro extends Agent {
                         // Essa mensagem só vai ser impressa caso a linha anterior for executada
                         fila.add(p);
                         System.out.println("Nova requisição para o padeiro!");
+                        System.out.println("Produzir "+ p.getQuantidade() + " de " + p.getNome());
+                        block(Main.delay * p.getTempo());
                     } catch (UnreadableException e) {
                         System.out.println("Falha ao ler pão");
                         e.printStackTrace();

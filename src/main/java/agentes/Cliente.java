@@ -14,12 +14,12 @@ import java.io.IOException;
 import java.util.Random;
 
 public class Cliente extends Agent {
-    AID atendente = Main.getAtendete().getAID();
     Random random = new Random();
     private boolean recebeu = false;
-
+    AID atendente;
     protected void setup() {
 
+       atendente = Main.getAtendete();
         // gerando pedido aleatório
         PaoTipo[] tipos = PaoTipo.values();
         random.nextInt(2);
@@ -32,13 +32,18 @@ public class Cliente extends Agent {
         addBehaviour(new OneShotBehaviour() {
 
             public void action() {
-                ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
-                msg.addReceiver(atendente);
-                msg.setLanguage("Português");
-                msg.setOntology("Aviso");
-                msg.setContent("Pedido pronto");
+                block(Main.delay);
+                System.out.println("Cliente chegou");
+                if (atendente == null){
+                    atendente = Main.getAtendete();
+                }
                 try {
                     // Adiciona pedido pronto na mensagem
+                    ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
+                    msg.addReceiver(atendente);
+                    msg.setLanguage("Português");
+                    msg.setOntology("Aviso");
+                    msg.setContent("Pedido pronto");
                     msg.setContentObject(p);
                     send(msg);
                 } catch (IOException e) {

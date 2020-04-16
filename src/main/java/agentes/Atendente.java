@@ -15,6 +15,7 @@ public class Atendente extends Agent {
     private boolean atendendo;
 
     protected void setup() {
+        Main.setAtendente(this);
         addBehaviour(new TickerBehaviour(this, Main.delay) {
             @Override
             protected void onTick() {
@@ -28,9 +29,11 @@ public class Atendente extends Agent {
                         Pedido pedido = (Pedido) msg.getContentObject();
                         // Essa mensagem só vai ser impressa caso a linha anterior for executada
                         System.out.println("Nova requisição para o atendente!");
+
                         // Buscar todos os pães do pedido
                         for (Pao p: pedido.getLista()) {
                         try{
+                            System.out.println(p.getNome() +" - " + p.getQuantidade());
                             Estoque e = Estoque.getInstance();
                             if (e.temNoEstoque((PaoTipo) p.getNome(), p.getQuantidade())){
                                 e.tiraDoEstoque((PaoTipo) p.getNome(), p.getQuantidade());

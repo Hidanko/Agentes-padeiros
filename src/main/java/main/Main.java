@@ -3,6 +3,7 @@ package main;
 
 import agentes.Atendente;
 import jade.Boot;
+import jade.core.AID;
 
 public class Main {
 
@@ -15,13 +16,18 @@ public class Main {
 		
 		String[] param = new String[2];
 		param[0] = "-gui";
-		param[1] = "  a:agentes.Atendente;p:agentes.Padeiro;";
+		param[1] = "  a:agentes.Atendente;p:agentes.Padeiro;cliente:agentes.Cliente";
 //		param[2] = "";
 		Boot.main(param);
 		
 	}
 
-	public static Atendente getAtendete() {
-		return atendete;
+	public static AID getAtendete() {
+		if(atendete != null){
+			return(atendete.getAID());
+		}
+		return(null);
 	}
+
+	public static void setAtendente(Atendente a){ Main.atendete = a;}
 }
