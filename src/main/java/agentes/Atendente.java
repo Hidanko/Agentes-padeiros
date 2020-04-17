@@ -10,6 +10,8 @@ import modelos.Pao;
 import modelos.PaoTipo;
 import modelos.Pedido;
 
+import java.io.IOException;
+
 public class Atendente extends Agent {
 
     private boolean atendendo;
@@ -37,9 +39,21 @@ public class Atendente extends Agent {
                             Estoque e = Estoque.getInstance();
                             if (e.temNoEstoque((PaoTipo) p.getNome(), p.getQuantidade())){
                                 e.tiraDoEstoque((PaoTipo) p.getNome(), p.getQuantidade());
+                                System.out.println("Pedido entregue");
                             }
                         }catch (Exception e){
-
+                            System.out.println("Sem estoque, enviando pedido para padeiro");
+                            try {
+                                // Adiciona pedido pronto na mensagem
+                                ACLMessage m = new ACLMessage(ACLMessage.INFORM);
+                                m.setLanguage("Português");
+                                m.setOntology("Aviso");
+                                m.setContent("Produzir mais pão");
+                                m.setContentObject(p);
+                                send(m);
+                            } catch (IOException exep) {
+                                exep.printStackTrace();
+                            }
                         }
                         }
                     } catch (UnreadableException e) {

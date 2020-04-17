@@ -17,14 +17,16 @@ public class Cliente extends Agent {
     Random random = new Random();
     private boolean recebeu = false;
     AID atendente;
+    PaoTipo t;
+    int q;
     protected void setup() {
 
        atendente = Main.getAtendete();
         // gerando pedido aleatório
         PaoTipo[] tipos = PaoTipo.values();
         random.nextInt(2);
-        PaoTipo t = tipos[random.nextInt(2) + 1];
-        int q = random.nextInt(20) + 1;
+        t = tipos[random.nextInt(2) + 1];
+        q = random.nextInt(20) + 1;
         final Pedido p = new Pedido();
         p.addLista((new Pao(t, q)));
 
@@ -34,6 +36,7 @@ public class Cliente extends Agent {
             public void action() {
                 block(Main.delay);
                 System.out.println("Cliente chegou");
+                System.out.println("Pedido: " + q + " " + t.toString());
                 if (atendente == null){
                     atendente = Main.getAtendete();
                 }
